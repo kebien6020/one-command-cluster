@@ -4,6 +4,7 @@ all: setup up
 setup:
 	./scripts/setup-backend.sh
 	./scripts/setup-ssh.sh
+	terraform init
 
 up:
 	terraform apply
